@@ -16,7 +16,8 @@ vipro.login(token='token')
 vipro.loginResult()
 print "Vipro-Login Success\n\n=====[Sukses Login]====="
 
-reload(sys)
+poll = LinePoll(client)
+
 sys.setdefaultencoding('utf-8')
 
 
