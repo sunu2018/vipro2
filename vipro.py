@@ -1,20 +1,3 @@
-# -*- coding: utf-8 -*-
-#Vipro Bot
-
-import LINETCR
-from LINETCR.lib.curve.ttypes import *
-from datetime import datetime
-from bs4 import BeautifulSoup
-from threading import Thread
-from googletrans import Translator
-from gtts import gTTS
-import time,random,sys,json,codecs,threading,glob,urllib,urllib2,urllib3,re,ast,os,subprocess,requests,tempfile
-
-vipro = LINETCR.LINE()
-#vipro.login(qr=True)
-vipro.login(token='EtHO8rZgTw1q6juRoVvf.4YSrMg2oNLZ3c2qS97Qi+W.k2TeLOz1HTtz2jJ+CuaaDHN+R9wcNMOY2hfRLRA6GvA=')
-vipro.loginResult()
-print "Vipro-Login Success\n\n=====[Sukses Login]====="
 
 poll = LinePoll(client)
 
