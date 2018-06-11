@@ -1,3 +1,18 @@
+# -*- coding: utf-8 -*-
+from linepy import *
+import json, time, random
+
+#kalo mau login menggunakan token
+#gunakan disini hapus tanda pagarnya 
+#yg atas dinpagar atau bisa juga token di atas 
+#di dalam tanda LINE ("TOKEN MU ")
+
+#client = LineClient()
+client = LineClient(authToken='EtHO8rZgTw1q6juRoVvf.4YSrMg2oNLZ3c2qS97Qi+W.k2TeLOz1HTtz2jJ+CuaaDHN+R9wcNMOY2hfRLRA6GvA=')
+client.log("Auth Token : " + str(client.authToken))
+
+channel = LineChannel(client)
+client.log("Channel Access Token : " + str(channel.channelAccessToken))
 
 poll = LinePoll(client)
 
