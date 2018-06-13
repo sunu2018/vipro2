@@ -30,25 +30,6 @@ readOpen = codecs.open("read.json","r","utf-8")
 settingsOpen = codecs.open("temp.json","r","utf-8")
 read = json.load(readOpen)
 settings = json.load(settingsOpen)
-Rfu = [line]
-Exc = [line]
-lineMID = line.getProfile().mid
-bot1 = line.getProfile().mid
-RfuBot=[lineMID]
-Family=["ud4f7f428170017a8124ebb3ab4b8dc57",lineMID]
-admin=['ud4f7f428170017a8124ebb3ab4b8dc57',lineMID]
-RfuFamily = RfuBot + Family
-
-protectname = []
-protecturl = []
-protection = []
-autocancel = {}
-autoinvite = []
-autoleaveroom = []
-targets = []
-#==============================================================================#
-reload(sys)
-sys.setdefaultencoding('utf-8')
 
 selfMessage ="""
 ╔═════════════════════════
