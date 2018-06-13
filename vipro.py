@@ -1,20 +1,3 @@
-# -*- coding: utf-8 -*-
-#Vipro Bot
-
-import LINETCR
-from LINETCR.lib.curve.ttypes import *
-from datetime import datetime
-from bs4 import BeautifulSoup
-from threading import Thread
-from googletrans import Translator
-from gtts import gTTS
-import time,random,sys,json,codecs,threading,glob,urllib,urllib2,urllib3,re,ast,os,subprocess,requests,tempfile
-
-vipro = LINETCR.LINE()
-vipro.login(qr=True)
-#vipro.login(token="Et6sEigK6EKPFGK1Tyu8.06A+2McPvSYG9y8QflROca.Trv+J5Cfue9yFqTzeEHl4bvBIKplhQeaw5r2AMftjJ0=")
-vipro.loginResult()
-print "Vipro-Login Success\n\n=====[Sukses Login]====="
 
 reload(sys)
 sys.setdefaultencoding('utf-8')
