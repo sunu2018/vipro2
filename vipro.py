@@ -31,6 +31,9 @@ settingsOpen = codecs.open("temp.json","r","utf-8")
 read = json.load(readOpen)
 settings = json.load(settingsOpen)
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 selfMessage ="""
 ╔═════════════════════════
 ║            ☆☞ S E L F ☜☆
