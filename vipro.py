@@ -1,4 +1,43 @@
+# -*- coding: utf-8 -*-
 
+from gyevha import *
+from datetime import datetime
+from time import sleep
+from bs4 import BeautifulSoup
+from humanfriendly import format_timespan, format_size, format_number, format_length
+import time, random, sys, json, codecs, threading, glob, re, string, os, requests, subprocess, six, ast, pytz, urllib, urllib.parse
+from gtts import gTTS
+from googletrans import Translator
+ 
+# Ini Untuk Login Via Lik Dan Via Emal
+#gye = LINE()
+#gye = LINE("Email","Password")
+#gye.log("Auth Token : " + str(gye.authToken))
+#channelToken = gye.getChannelResult()
+#gye.log("Channel Token : " + str(channelToken))
+
+# Silahkan Edit Sesukamu
+# Asalkan Rapih Dan Respon
+# jika ingin login Via qr Ganti Saja
+# Atau Login Via Emal
+# Mudeng Orang kalo Ra Mudeng
+# Sungguh Terlalu
+# Jangan Lupa Add Admin 
+# id Line ( aisyagye )
+#==============================================================================#
+botStart = time.time()
+#kalo mau login code qr disini pake
+#gye = LINE()
+#gye.log("Auth Token : " + str(gye.authToken))
+#channelToken = gye.getChannelResult()
+#gye.log("Channel Token : " + str(channelToken))
+
+#ais = LINE()
+#ais.log("Auth Token : " + str(ais.authToken))
+#channelToken = ais.getChannelResult()
+#ais.log("Channel Token : " + str(channelToken))
+
+gye = LINE("EtHO8rZgTw1q6juRoVvf.4YSrMg2oNLZ3c2qS97Qi+W.k2TeLOz1HTtz2jJ+CuaaDHN+R9wcNMOY2hfRLRA6GvA=")
 
 selfMessage ="""
 ╔═════════════════════════
@@ -127,7 +166,7 @@ groupMessage ="""
 ║    〽️ line.me/ti/p/~gjxvipro 〽️
 ╚═════════════════════════
 """
-vip="uda936836a9869eb86ec8ab992a4e8979"
+gye="uda936836a9869eb86ec8ab992a4e8979"
 
 setMessage ="""
 ╔═════════════════════════
@@ -229,19 +268,19 @@ helpMessage ="""
 """
 
 
-KAC=[vipro]
-mid = vipro.getProfile().mid
+KAC=[gye]
+mid = gye.getProfile().mid
 Bots=[mid]
 Creator=["uda936836a9869eb86ec8ab992a4e8979"]
 admin=["uda936836a9869eb86ec8ab992a4e8979"]
 
-contact = vipro.getProfile()
-backup1 = vipro.getProfile()
+contact = gye.getProfile()
+backup1 = gye.getProfile()
 backup1.displayName = contact.displayName
 backup1.statusMessage = contact.statusMessage                        
 backup1.pictureStatus = contact.pictureStatus
 
-responsename = vipro.getProfile().displayName
+responsename = gye.getProfile().displayName
 
 
 wait = {
