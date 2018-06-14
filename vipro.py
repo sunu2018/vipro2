@@ -1,38 +1,4 @@
-# -*- coding: utf-8 -*-
-from vipropy import *
-from akad.ttypes import *
-from multiprocessing import Pool, Process
-from datetime import datetime
-from time import sleep
-from bs4 import BeautifulSoup
-from humanfriendly import format_timespan, format_size, format_number, format_length
-import time, random, sys, json, codecs, threading, glob, re, string, os, requests, subprocess, six, ast, pytz, urllib.request, urllib.parse, urllib.error, urllib.parse,antolib,subprocess,unicodedata,GACSender
-from gtts import gTTS
-from googletrans import Translator
-#==============================================================================#
-botStart = time.time()
-#==============================================================================#
-vipro = LINE()
-#line = LINE("เมล","พาส")
-#line = LINE('')
-vipro.log("Auth Token : " + str(vipro.authToken))
-vipro.log("Timeline Token : " + str(vipro.tl.channelAccessToken))
 
-print ("Login Succes")
-
-lineMID = vipro.profile.mid
-lineProfile = vipro.getProfile()
-lineSettings = vipro.getSettings()
-
-oepoll = OEPoll(vipro)
-#call = Call(line)
-readOpen = codecs.open("read.json","r","utf-8")
-settingsOpen = codecs.open("temp.json","r","utf-8")
-read = json.load(readOpen)
-settings = json.load(settingsOpen)
-
-reload(sys)
-sys.setdefaultencoding('utf-8')
 
 selfMessage ="""
 ╔═════════════════════════
