@@ -572,7 +572,7 @@ def bot(op):
                 vipro.sendText(op.param1,str(wait["message"]))
 
 
-        if op.type == 55:
+      if op.type == 55:
 	    try:
 	      group_id = op.param1
 	      user_id=op.param2
